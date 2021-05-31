@@ -1,0 +1,17 @@
+
+skip_strings:
+  # will be skipped in all files
+  /:
+    - test_key
+    - test_pwd
+  # will only be skipped in corresponding files
+  /config/main.yml:
+    - main_key
+    - main_pwd
+
+skip_paths:
+  - test.py
+
+no_regex: false
+no_entropy: true
+no_history: true
