@@ -2,7 +2,7 @@
 
 set -e # Abort script at first error
 
-args="--no-history --no-entropy -c th3.yml" # Default trufflehog options
+args="--no-history --no-entropy --line-numbers" # Default trufflehog options
 
 if [ -n "${INPUT_SCANARGUMENTS}" ]; then
   args="${INPUT_SCANARGUMENTS}" # Overwrite if new options string is provided
